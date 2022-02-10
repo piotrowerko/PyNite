@@ -5,7 +5,7 @@ in this model are expressed in terms of kips (force) and inches (length).
 '''
 
 # Create a new model for the beam
-from PyNite import FEModel3D
+from pynite import FEModel3D
 boef = FEModel3D()
 
 # Assign the length of the beam

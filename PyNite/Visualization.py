@@ -17,7 +17,7 @@ class Renderer():
         self.model = model
 
         # Default settings
-        self.annotation_size = 5
+        self.annotation_size = 1
         self.deformed_shape = False
         self.deformed_scale = 30
         self.render_loads = True
@@ -30,7 +30,7 @@ class Renderer():
         # Initialize the renderer
         self.renderer = None
 
-    def setannotation_size(self, size=5):
+    def setannotation_size(self, size=1):
         self.annotation_size = size
     
     def setdeformed_shape(self, deformed_shape=False):
@@ -265,14 +265,14 @@ class Renderer():
         return renderer
 
 # %%
-def RenderModel(model, annotation_size=5, deformed_shape=False, deformed_scale=30,
+def RenderModel(model, annotation_size=1, deformed_shape=False, deformed_scale=30,
                 render_loads=True, color_map=None, combo_name='Combo 1', case=None, labels=True,
                 screenshot=None):
     warnings.warn('`RenderModel` will be replaced with `render_model` in a future version of PyNite.', FutureWarning)
     render_model(model, annotation_size, deformed_shape, deformed_scale, render_loads, color_map,
                  True, combo_name, case, labels, screenshot)
 
-def render_model(model, annotation_size=5, deformed_shape=False, deformed_scale=30,
+def render_model(model, annotation_size=1, deformed_shape=False, deformed_scale=30,
                  render_loads=True, color_map=None, scalar_bar=True, combo_name='Combo 1', case=None, labels=True,
                  screenshot=None):
     '''
