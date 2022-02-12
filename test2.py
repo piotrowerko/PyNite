@@ -1,4 +1,9 @@
-#import pynite jako biblioteki pobranej z PIP
-import pynite as pyn
+import numpy as np
 
-a = pyn.FEModel3D()
+a = np.array([1, 2, 3])
+b = np.array([1, 2, 3])
+
+#c = np.array([])
+
+c = np.append(a, b, axis=None)
+print(c)
